@@ -8,7 +8,8 @@ Alur mekanisme lookup peta eBPF (cilium_policy)
 
 ---
 ## Goal
-Evaluasi kinerja komunikasi kontainer lintas-node yang diakibatkan peningkatan penegakan kebijakan jaringan Kubernetes.
+
+Evaluasi kinerja komunikasi kontainer lintas-node yang diakibatkan peningkatan policy Enforcement Kubernetes.
 ---
 
 ## Demonstrasi Uji
