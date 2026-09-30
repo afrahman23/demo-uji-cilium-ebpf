@@ -7,11 +7,8 @@
 Alur mekanisme lookup peta eBPF (cilium_policy)
 
 ---
-## Scenario
-Skenario Uji Peningkatan Kebijakan Jaringan (Network Policy) Kubernetes
-
-Setelah pembuktian default-deny, tahap selanjutnya menjalankan kompleksitas policy dengan menaikan rule-set bertahap dari 1000, 2000 sampai 76000 secara gradual.
-
+## Goal
+Evaluasi kinerja komunikasi kontainer lintas-node yang diakibatkan peningkatan penegakan kebijakan jaringan Kubernetes.
 ---
 
 ## Demonstrasi Uji
@@ -96,7 +93,11 @@ wait
 
 ---
 
-## Skenario Pengujian Utama via skrip via skrip (Concurrency 16 Sesi)
+## Pengujian Utama via skrip (Concurrency 16 Sesi)
+
+Skenario Uji Peningkatan Kebijakan Jaringan (Network Policy) Kubernetes.
+
+Setelah pembuktian default-deny, tahap selanjutnya menjalankan kompleksitas policy dengan menaikan rule-set bertahap dari 1000, 2000 sampai 76000 secara gradual.
 
 Pengujian  *workload* yang sama (16 sesi) untuk membandingkan kondisi *Baseline* (Tanpa CNP) dengan perlakuan *Policy* bertingkat (CNP 1000, 2000, dan 7800). Demo konkurensi visualisasi dibuat dalam skrip wrapper: `demo-stream.sh` dan `demo-rr.sh`.
 
